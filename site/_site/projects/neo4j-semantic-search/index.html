@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neo4j Semantic Search for LLM Applications — Sara Sadr Jahani</title>
+<meta name="description" content="Consent-based data pipelines on Google Cloud and Neo4j-backed semantic search for LLM applications, built at Goodfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/portfolio.css?v=1792666305">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });">
+</script>
+
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="mark">S<span>.</span>Sadr Jahani</a>
+    <nav class="links">
+      <a href="/" >Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/cv/" >CV</a>
+      <a href="/news/" >News</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/research/" >Research</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main>
+<article class="page-header" style="padding-bottom:0;">
+  <a href="/projects/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+  <div class="research-hero">
+    
+    <span class="proj-status status-done">completed</span>
+    
+    <h1>Neo4j Semantic Search for LLM Applications</h1>
+    <p class="research-subtitle">Consent-based data collection on GCP feeding a Neo4j graph that powers semantic search for LLM applications — built at Goodfolio.</p>
+    
+    <div class="tags">
+      <span class="tag">Neo4j</span><span class="tag">RAG</span><span class="tag">GCP</span>
+    </div>
+    
+  </div>
+</article>
+
+<section style="padding-top:0;">
+  
+
+  <div class="research-body">
+    <h2 id="overview">Overview</h2>
+
+<p>Built at Goodfolio (London, remote) as part of a UK-based product team: a data pipeline that
+collects professional profile data <strong>only from users who voluntarily share it with explicit
+permission</strong>, models it in a Neo4j graph, and lets LLM applications retrieve relevant
+insights through semantic search.</p>
+
+<h2 id="consent-based-data-collection">Consent-based data collection</h2>
+
+<p>Users shared professional profile data (for example from LinkedIn) through Google Forms and
+other Google Workspace tools, with explicit permission. The data flowed into Google Cloud
+Platform, where LLMs analyzed it to power end-to-end service delivery.</p>
+
+<pre><code class="language-mermaid">flowchart TB
+    A[Users share data with explicit permission] --&gt; B[Google Forms / Workspace]
+    B --&gt; C[GCP pipeline]
+    C --&gt; D[(Neo4j graph)]
+    D --&gt; E[LLM application: semantic search]
+</code></pre>
+
+<h2 id="graph-backed-semantic-search">Graph-backed semantic search</h2>
+
+<p>Neo4j graph databases model the relationships in the collected data so an LLM application can
+retrieve relevant context for a question instead of relying on plain keyword or vector lookup
+alone.</p>
+
+<h2 id="prompting">Prompting</h2>
+
+<p>Few-shot and structured prompting raised LLM output accuracy in production.</p>
+
+<h2 id="results">Results</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Relevant data-insight retrieval</td>
+      <td>~30% improvement</td>
+    </tr>
+    <tr>
+      <td>LLM output accuracy</td>
+      <td>~15% improvement</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+  
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Sara Sadr Jahani</span>
+  <span>Portfolio</span>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="6 11 12 5 18 11"></polyline></svg></button>
+
+<script src="/assets/js/portfolio.js"></script>
+</body>
+</html>

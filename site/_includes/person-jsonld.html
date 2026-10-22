@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author }}",
+  "alternateName": "{{ site.alias }}",
+  "jobTitle": "{{ site.job_title }}",
+  "email": "mailto:{{ site.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.location }}"
+  },
+  "url": "{{ site.url }}{{ site.baseurl }}"
+}
+</script>

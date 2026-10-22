@@ -1,0 +1,44 @@
+[
+  {
+    "type": "teaching assistant",
+    "title": "Data Mining Course",
+    "org": "IASBS",
+    "date": "Spring 2020"
+  },
+  {
+    "type": "teaching assistant",
+    "title": "Information Technologies and Rules",
+    "org": "IASBS",
+    "date": "Spring 2019"
+  },
+  {
+    "type": "teaching assistant",
+    "title": "Logic Circuit (Digital Design)",
+    "org": "Alzahra University",
+    "date": "Fall 2014"
+  },
+  {
+    "type": "teaching assistant",
+    "title": "Data Structures and Algorithms",
+    "org": "Alzahra University",
+    "date": "Fall 2013"
+  },
+  {
+    "type": "workshop",
+    "title": "Annual CS workshops — planned and managed",
+    "org": "Alzahra University",
+    "date": "2013 – 2015"
+  },
+  {
+    "type": "workshop",
+    "title": "8th Winter School on Computational Geometry — executing group member",
+    "org": "Amirkabir University of Technology (AUT)",
+    "date": "Winter 2016"
+  },
+  {
+    "type": "workshop",
+    "title": "CiDaS — executing group member",
+    "org": "IASBS, Zanjan",
+    "date": "Winter 2019"
+  }
+]

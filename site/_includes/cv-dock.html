@@ -1,0 +1,59 @@
+<!--
+  Vertical icon rail, CV page only. Each item is a fixed-size icon;
+  hovering shows a floating tooltip with its label instead of expanding
+  the pill itself (see portfolio.css), so nothing ever grows into the
+  page content. A close button collapses the whole rail down to a small
+  reopen handle in the same spot — useful at widths like iPad's 820px,
+  where there isn't quite enough side margin for the rail to sit without
+  brushing the right edge of the section text.
+-->
+<div class="cv-dock" id="cvDock">
+  <button class="cv-dock-handle" id="cvDockHandle" aria-label="Show section nav" hidden>
+    <i class="fa-solid fa-compass"></i>
+  </button>
+  <nav class="cv-dock-rail" id="cvDockRail" aria-label="Jump to CV section">
+    <button class="cv-dock-close" id="cvDockClose" aria-label="Hide section nav">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="#education" class="cv-dock-pill" data-section="education" aria-label="Education">
+      <span class="cv-dock-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span class="cv-dock-label">Education</span>
+    </a>
+    <a href="#experience" class="cv-dock-pill" data-section="experience" aria-label="Experience">
+      <span class="cv-dock-icon"><i class="fa-solid fa-briefcase"></i></span>
+      <span class="cv-dock-label">Experience</span>
+    </a>
+    <a href="#research-experience" class="cv-dock-pill" data-section="research-experience" aria-label="Research Experience">
+      <span class="cv-dock-icon"><i class="fa-solid fa-flask"></i></span>
+      <span class="cv-dock-label">Research</span>
+    </a>
+    <a href="#awards" class="cv-dock-pill" data-section="awards" aria-label="Honours and Awards">
+      <span class="cv-dock-icon"><i class="fa-solid fa-trophy"></i></span>
+      <span class="cv-dock-label">Awards</span>
+    </a>
+    <a href="#skills" class="cv-dock-pill" data-section="skills" aria-label="Tools and Methods">
+      <span class="cv-dock-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+      <span class="cv-dock-label">Skills</span>
+    </a>
+    <a href="#languages" class="cv-dock-pill" data-section="languages" aria-label="Languages">
+      <span class="cv-dock-icon"><i class="fa-solid fa-language"></i></span>
+      <span class="cv-dock-label">Languages</span>
+    </a>
+    <a href="#certifications" class="cv-dock-pill" data-section="certifications" aria-label="Certifications and Courses">
+      <span class="cv-dock-icon"><i class="fa-solid fa-certificate"></i></span>
+      <span class="cv-dock-label">Certifications</span>
+    </a>
+    <a href="#volunteering" class="cv-dock-pill" data-section="volunteering" aria-label="Volunteering">
+      <span class="cv-dock-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+      <span class="cv-dock-label">Volunteering</span>
+    </a>
+    <a href="#academic-service" class="cv-dock-pill" data-section="academic-service" aria-label="Academic Service">
+      <span class="cv-dock-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+      <span class="cv-dock-label">Academic Service</span>
+    </a>
+    <a href="#references" class="cv-dock-pill" data-section="references" aria-label="References">
+      <span class="cv-dock-icon"><i class="fa-solid fa-address-card"></i></span>
+      <span class="cv-dock-label">References</span>
+    </a>
+  </nav>
+</div>

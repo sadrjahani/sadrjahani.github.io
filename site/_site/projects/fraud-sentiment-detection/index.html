@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud & Sentiment Detection — Sara Sadr Jahani</title>
+<meta name="description" content="Bilingual NLP models for fraud detection and sentiment analysis, delivered freelance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/portfolio.css?v=1792666305">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });">
+</script>
+
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="mark">S<span>.</span>Sadr Jahani</a>
+    <nav class="links">
+      <a href="/" >Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/cv/" >CV</a>
+      <a href="/news/" >News</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/research/" >Research</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main>
+<article class="page-header" style="padding-bottom:0;">
+  <a href="/projects/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+  <div class="research-hero">
+    
+    <span class="proj-status status-done">completed</span>
+    
+    <h1>Fraud & Sentiment Detection</h1>
+    <p class="research-subtitle">NLP-driven fraud detection and sentiment analysis models delivered in both English and Persian.</p>
+    
+    <div class="tags">
+      <span class="tag">NLP</span><span class="tag">Fraud Detection</span><span class="tag">Sentiment</span>
+    </div>
+    
+  </div>
+</article>
+
+<section style="padding-top:0;">
+  
+
+  <div class="research-body">
+    <h2 id="overview">Overview</h2>
+
+<p>Two related freelance deliverables for the same client: a fraud-flagging classifier over
+transaction text, and a sentiment model over customer feedback — both needed to work in
+English and Persian without maintaining two separate pipelines.</p>
+
+<h2 id="preprocessing">Preprocessing</h2>
+
+<p>The same normalization step handles both languages, so downstream models never need to know
+which language they’re looking at:</p>
+
+<div class="code-tabs">
+  <div class="code-tabs-nav">
+  <button class="code-tab-btn active" data-tab="py-fraud">Python</button>
+  <button class="code-tab-btn" data-tab="py-fraud-alt">Alt. tokenizer</button>
+</div>
+
+  <div class="code-tabs-panel active" data-tab="py-fraud">
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nf">strip_diacritics</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">tokenizer</span><span class="p">[</span><span class="n">lang</span><span class="p">].</span><span class="nf">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">lower</span><span class="p">())</span>
+</code></pre></div>    </div>
+  </div>
+
+  <div class="code-tabs-panel" data-tab="py-fraud-alt">
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">lang</span><span class="p">):</span>
+    <span class="c1"># multilingual fallback when a language-specific tokenizer isn't available
+</span>    <span class="k">return</span> <span class="n">multilingual_tokenizer</span><span class="p">.</span><span class="nf">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">lower</span><span class="p">())</span>
+</code></pre></div>    </div>
+  </div>
+
+</div>
+
+<h2 id="result">Result</h2>
+
+<p>A shared preprocessing layer plus separate lightweight classifier heads per task kept the
+system maintainable — new languages could be added by dropping in a tokenizer, without
+retraining either classifier from scratch.</p>
+
+  </div>
+
+  
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Sara Sadr Jahani</span>
+  <span>Portfolio</span>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="6 11 12 5 18 11"></polyline></svg></button>
+
+<script src="/assets/js/portfolio.js"></script>
+</body>
+</html>
