@@ -26,7 +26,6 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
-          working-directory: site
 
       - name: Setup Pages
         id: pages
@@ -34,14 +33,13 @@ jobs:
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --source . --destination ./_site --baseurl "${{ steps.pages.outputs.base_path }}"
-        working-directory: site
         env:
           JEKYLL_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/_site
+          path: _site
 
   deploy:
     environment:
