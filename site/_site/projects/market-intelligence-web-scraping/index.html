@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Intelligence Web Scraping — Sara Sadr Jahani</title>
+<meta name="description" content="Freelance web scraping pipeline for market intelligence, feeding the pricing optimizer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/portfolio.css?v=1792743441">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });">
+</script>
+
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="mark">S<span>.</span>Sadr Jahani</a>
+    <nav class="links">
+      <a href="/" >Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/cv/" >CV</a>
+      <a href="/news/" >News</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/research/" >Research</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main>
+<article class="page-header" style="padding-bottom:0;">
+  <a href="/projects/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+  <div class="research-hero">
+    
+    <span class="proj-status status-done">completed</span>
+    
+    <h1>Market Intelligence Web Scraping</h1>
+    <p class="research-subtitle">Automated collection of competitor and market data to feed pricing and demand models.</p>
+    
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">Web Scraping</span><span class="tag">Market Intelligence</span>
+    </div>
+    
+  </div>
+</article>
+
+<section style="padding-top:0;">
+  
+
+  <div class="research-body">
+    <h2 id="overview">Overview</h2>
+
+<p>A companion piece to the <a href="/projects/dynamic-pricing-optimizer/">Dynamic Pricing Optimizer</a>,
+built during the same freelance engagement: the pricing model is only as good as the market
+data feeding it, so this project automated the collection of competitor prices and demand
+signals that had previously been gathered by hand.</p>
+
+<h2 id="approach">Approach</h2>
+
+<p>A scheduled scraper walks a set of competitor listing pages, extracts price and availability,
+and normalizes everything into a shared schema regardless of which site it came from:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">scrape_listing</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Fetch and normalize a single competitor listing.</span><span class="sh">"""</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nf">fetch_with_backoff</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">parser</span><span class="p">.</span><span class="nf">extract</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">sku</span><span class="sh">"</span><span class="p">:</span> <span class="nf">normalize_sku</span><span class="p">(</span><span class="n">raw</span><span class="p">[</span><span class="sh">"</span><span class="s">sku</span><span class="sh">"</span><span class="p">]),</span>
+        <span class="sh">"</span><span class="s">price</span><span class="sh">"</span><span class="p">:</span> <span class="nf">parse_price</span><span class="p">(</span><span class="n">raw</span><span class="p">[</span><span class="sh">"</span><span class="s">price</span><span class="sh">"</span><span class="p">]),</span>
+        <span class="sh">"</span><span class="s">in_stock</span><span class="sh">"</span><span class="p">:</span> <span class="n">raw</span><span class="p">[</span><span class="sh">"</span><span class="s">availability</span><span class="sh">"</span><span class="p">]</span> <span class="o">==</span> <span class="sh">"</span><span class="s">available</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">scraped_at</span><span class="sh">"</span><span class="p">:</span> <span class="nf">now_utc</span><span class="p">(),</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Retry-with-backoff and per-domain rate limiting kept the scraper polite and stable against
+sites that rotated their markup periodically — a per-site <code class="language-plaintext highlighter-rouge">parser</code> adapter meant a markup
+change only broke one adapter, not the whole pipeline.</p>
+
+<h2 id="result">Result</h2>
+
+<p>Feeding fresher, more complete competitor data into the pricing model was a direct input into
+the 30% efficiency gain described in the pricing optimizer write-up — stale market data had
+been causing the model to misprice against competitors who’d already moved.</p>
+
+  </div>
+
+  
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Sara Sadr Jahani</span>
+  <span>Portfolio</span>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="6 11 12 5 18 11"></polyline></svg></button>
+
+<script src="/assets/js/portfolio.js"></script>
+</body>
+</html>

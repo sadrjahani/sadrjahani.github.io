@@ -1,0 +1,38 @@
+[
+  {
+    "years": "Sep 2026 — Present",
+    "role": "Independent Projects & Upskilling",
+    "org": "Self-directed",
+    "description": "Built and evaluated a local PDF RAG system; building a ReAct agent from scratch, a LangChain rebuild and a GraphRAG project in public repositories; studying German (B2 course)."
+  },
+  {
+    "years": "Mar 2025 — Aug 2026",
+    "role": "Machine Learning Engineer",
+    "org": "Freelance",
+    "description": "Engineered RAG pipelines with LangChain and served them via API endpoints for industrial clients, cutting design-iteration time by ~15% through automated prompt optimization; built AI agent systems on MCP Server to standardize how LLMs access enterprise data sources; designed reproducible end-to-end AI pipelines, packaging select services with FastAPI and Docker."
+  },
+  {
+    "years": "Sep 2024 — Feb 2025",
+    "role": "AI Engineer",
+    "org": "Goodfolio, London (Remote)",
+    "description": "Built consent-based data-collection pipelines (Google Forms/Workspace to GCP) where users voluntarily shared professional profile data (e.g., from LinkedIn) with explicit permission, and applied LLMs to analyze it; architected Neo4j graph databases for semantic search in LLM applications, improving relevant data-insight retrieval by ~30%; raised LLM output accuracy by ~15% with few-shot and structured prompting."
+  },
+  {
+    "years": "Nov 2022 — Jul 2024",
+    "role": "Machine Learning Specialist",
+    "org": "Freelance",
+    "description": "Delivered fraud-detection and sentiment-analysis models for unstructured text (95% precision); built and validated time-series forecasting frameworks (LSTM, XGBoost); developed Django-based APIs that improved pricing efficiency by ~30%, plus web-scraping pipelines for market intelligence; shipped multilingual (English/Persian) NLP solutions that cut manual processing time by ~40%."
+  },
+  {
+    "years": "Jul 2021 — Nov 2022",
+    "role": "Data Science Specialist",
+    "org": "Sabke Zandegi Khallagh (Alinland e-commerce platform), Tehran",
+    "description": "Built automated web-scraping and data pipelines that kept e-commerce datasets current; analyzed e-commerce data trends to optimize marketing strategies and pricing decisions."
+  },
+  {
+    "years": "2016 — 2018",
+    "role": "IT & Network Administration",
+    "org": "Alzahra University; Arian Saeed Industrial Group (ASIGI), Tehran",
+    "description": "Supported virtualization servers and network services; built an internal management dashboard for decision-making."
+  }
+]

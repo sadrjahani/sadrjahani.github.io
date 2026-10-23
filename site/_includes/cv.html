@@ -1,0 +1,110 @@
+<div class="page-header">
+  <h1>Curriculum Vitae</h1>
+  <p class="lede">Experience, education, and tools — or skip the summary and get the full PDF.</p>
+  <div style="margin-top:26px;">
+    <a href="{{ site.cv_pdf | relative_url }}" class="cta" download>Download PDF ↓</a>
+  </div>
+</div>
+
+  <section class="bordered" id="education">
+    <div class="section-head reveal">
+      <h2>Education</h2>
+    </div>
+    {% include timeline.html rows=site.data.education %}
+  </section>
+
+  <section class="bordered" id="experience">
+    <div class="section-head reveal">
+      <h2>Experience</h2>
+    </div>
+    {% include timeline.html rows=site.data.experience %}
+  </section>
+
+  <section class="bordered" id="research-experience">
+    <div class="section-head reveal">
+      <h2>Research Experience</h2>
+    </div>
+    {% include timeline.html rows=site.data.research_experience %}
+  </section>
+
+  <section class="bordered" id="awards">
+    <div class="section-head reveal">
+      <h2>Honours &amp; Awards</h2>
+    </div>
+    {% include timeline.html rows=site.data.awards %}
+  </section>
+
+  <section class="bordered" id="skills">
+    <div class="section-head reveal">
+      <h2>Tools &amp; Methods</h2>
+    </div>
+    <div class="skill-row reveal">
+      {% for skill in site.data.skills %}<span>{{ skill }}</span>{% endfor %}
+    </div>
+  </section>
+
+  <section class="bordered" id="languages">
+    <div class="section-head reveal">
+      <h2>Languages</h2>
+    </div>
+    <div class="skill-row reveal">
+      {% for lang in site.data.languages %}<span>{{ lang.name }} — {{ lang.level }}</span>{% endfor %}
+    </div>
+  </section>
+
+  <section class="bordered" id="certifications">
+    <div class="section-head reveal">
+      <h2>Certifications</h2>
+    </div>
+    {% assign items = site.data.certifications | where: "type", "certification" %}
+    {% include timeline.html rows=items %}
+  </section>
+
+  <section class="bordered" id="training">
+    <div class="section-head reveal">
+      <h2>Courses &amp; Workshops</h2>
+    </div>
+    {% assign items = site.data.certifications | where: "type", "training" %}
+    {% include timeline.html rows=items %}
+  </section>
+
+  <section class="bordered" id="volunteering">
+    <div class="section-head reveal">
+      <h2>Volunteering</h2>
+    </div>
+    {% include timeline.html rows=site.data.volunteering %}
+  </section>
+
+  <section class="bordered" id="academic-service">
+    <div class="section-head reveal">
+      <h2>Academic Service</h2>
+    </div>
+    <div class="timeline reveal">
+      {% for row in site.data.academic_service %}
+      <div class="t-row">
+        <div class="t-year">{{ row.date }}</div>
+        <div>
+          <div class="t-role">{{ row.title }}</div>
+          <div class="t-org">{{ row.org }} · {{ row.type }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="bordered" id="references">
+    <div class="section-head reveal">
+      <h2>References</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="t-row">
+        <div class="t-year"></div>
+        <div>
+          <div class="t-role">Academic references available on request</div>
+          <div class="t-org">Please get in touch by email.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% include cv-dock.html %}

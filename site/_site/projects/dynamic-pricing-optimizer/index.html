@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Pricing Optimizer — Sara Sadr Jahani</title>
+<meta name="description" content="Freelance pricing optimization system with a beam-search-style candidate ranking approach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/portfolio.css?v=1792743441">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });">
+</script>
+
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="mark">S<span>.</span>Sadr Jahani</a>
+    <nav class="links">
+      <a href="/" >Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/cv/" >CV</a>
+      <a href="/news/" >News</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/research/" >Research</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main>
+<article class="page-header" style="padding-bottom:0;">
+  <a href="/projects/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+  <div class="research-hero">
+    
+    <span class="proj-status status-done">completed</span>
+    
+    <h1>Dynamic Pricing Optimizer</h1>
+    <p class="research-subtitle">A pricing system overhaul that improved efficiency by 30% while cutting execution time, built freelance.</p>
+    
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">Optimization</span><span class="tag">Automation</span>
+    </div>
+    
+  </div>
+</article>
+
+<section style="padding-top:0;">
+  
+
+  <div class="research-body">
+    <h2 id="overview">Overview</h2>
+
+<p>A freelance engagement rebuilding a client’s dynamic pricing system, which recalculated prices
+across a large catalog on a schedule and had grown slow enough to lag behind real market
+movement.</p>
+
+<h2 id="approach">Approach</h2>
+
+<p>The core loop ranks candidate price points per item against a cost/demand model, keeping only
+the top-scoring candidates at each step rather than exhaustively evaluating the full price
+range:</p>
+
+<pre><code class="language-pseudocode">\begin{algorithm}
+\caption{Candidate Price Ranking}
+\begin{algorithmic}
+\PROCEDURE{RankPrices}{$$item, candidates, model$$}
+    \STATE $$scores \gets \emptyset$$
+    \FOR{$$p \in candidates$$}
+        \STATE $$scores[p] \gets$$ \CALL{ExpectedMargin}{$$item, p, model$$}
+    \ENDFOR
+    \RETURN \CALL{TopK}{$$scores, k$$}
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+</code></pre>
+
+<h2 id="result">Result</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full catalog recompute</td>
+      <td>100% (baseline)</td>
+      <td>70% of runtime</td>
+    </tr>
+    <tr>
+      <td>Pricing efficiency</td>
+      <td>baseline</td>
+      <td>+30%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Cutting the candidate set early, rather than scoring every possible price, was most of the
+runtime win — the remainder came from batching the model calls instead of issuing them one
+item at a time.</p>
+
+  </div>
+
+  
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Sara Sadr Jahani</span>
+  <span>Portfolio</span>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="6 11 12 5 18 11"></polyline></svg></button>
+
+<script src="/assets/js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "RAG & LLM Applications",
+    "description": "End-to-end design, build and evaluation: chunking, embeddings, retrieval and grounded generation with citations, measured on golden question sets."
+  },
+  {
+    "title": "Agents & Retrieval Architecture",
+    "description": "Choosing the right approach for the problem: vector vs. graph retrieval (FAISS, Neo4j), a custom agent loop vs. a framework (ReAct from scratch, LangChain, MCP)."
+  },
+  {
+    "title": "From Data Science to GenAI",
+    "description": "A solid NLP and ML foundation (transformers, SBERT, forecasting) applied to LLM systems, served through APIs with FastAPI and Docker."
+  }
+]

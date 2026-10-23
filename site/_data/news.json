@@ -1,0 +1,22 @@
+[
+  {
+    "date": "Oct 2026",
+    "html": "Started <a href=\"https://github.com/sadrjahani/react-agent-from-scratch\">react-agent-from-scratch</a>: a ReAct agent in plain Python with a provider-agnostic LLM wrapper (work in progress)."
+  },
+  {
+    "date": "Oct 2026",
+    "html": "Published a fully local PDF RAG system (FAISS, Ollama) with a retrieval evaluation — <a href=\"https://github.com/sadrjahani/rag-qa-system\">rag-qa-system on GitHub</a>."
+  },
+  {
+    "date": "Aug 2026",
+    "html": "Wrapped up project-based freelance work as a <strong>Machine Learning Engineer</strong>: RAG pipelines, MCP-based AI agents and API-served AI pipelines for industrial clients."
+  },
+  {
+    "date": "Feb 2025",
+    "html": "Wrapped up an AI Engineer role at <strong>Goodfolio</strong> (London, remote), building consent-based data pipelines and Neo4j-backed semantic search for LLM applications."
+  },
+  {
+    "date": "2022",
+    "html": "Completed an MSc in Computer Science — Data Mining at <strong>IASBS, Zanjan</strong>, with a thesis on scoring augmented sentences using an autoencoder and Siamese BERT."
+  }
+]
