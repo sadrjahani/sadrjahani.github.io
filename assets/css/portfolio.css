@@ -1,19 +1,19 @@
 /* ==========================================================================
-   Portfolio — cool, quiet, slate + powder blue
+   Portfolio — light, quiet, blue + grey
    Tokens first; every component below reads from them.
    ========================================================================== */
 :root{
-  --bg:#F8FAFB;             /* cool near-white (cloud) */
-  --paper:#EDF2F5;          /* pale mist: bands, code, chips */
-  --ink:#1F2D40;            /* deep naval: headings, strong text */
-  --ink-soft:#4A5B6D;       /* slate: body text */
-  --ink-faint:#66788A;      /* steel grey: meta, dates */
-  --accent:#44688F;         /* dusty steel blue: links, buttons */
-  --accent-strong:#2F4E73;  /* naval: hover, code keywords */
-  --accent-tint:#E1EBF3;    /* powder blue: chips / highlights */
-  --accent-warm:#587880;    /* muted teal-grey (secondary) */
-  --accent-2:#2F3E56;       /* deep slate */
-  --accent-mist:#A8CAC8;    /* pale sea-glass, decorative only */
+  --bg:#F8FAFB;
+  --paper:#EDF2F5;
+  --ink:#1F2D40;
+  --ink-soft:#4A5B6D;
+  --ink-faint:#66788A;
+  --accent:#44688F;
+  --accent-strong:#2F4E73;
+  --accent-tint:#E1EBF3;
+  --accent-warm:#587880;
+  --accent-2:#2F3E56;
+  --accent-mist:#A8CAC8;
   --line:#DCE5EB;
   --line-strong:#C5D2DC;
   --max:1080px;
@@ -469,10 +469,6 @@ pre[id^="pseudocode-"] *{color:inherit;}
 }
 
 .hero-alias{font-size:17px;color:var(--ink-faint);margin:-8px 0 14px;font-weight:500;letter-spacing:.01em;}
-.cert-list{max-width:var(--max);}
-.cert-link{color:var(--accent);font-size:14px;margin-left:10px;border-bottom:1px solid var(--line-strong);}
-.cert-link:hover{color:var(--accent-strong);}
-
 .t-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;}
 .t-links a{font-size:13.5px;color:var(--accent);border-bottom:1px solid var(--line-strong);padding-bottom:1px;}
 .t-links a:hover{color:var(--accent-strong);border-color:var(--accent-strong);}

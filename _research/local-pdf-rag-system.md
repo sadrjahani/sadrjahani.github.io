@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 1
+order: 3
 title: "Local PDF RAG System"
 subtitle: "A fully local question-answering pipeline over PDF books — PyMuPDF, FAISS and an Ollama model — with source citations and a retrieval evaluation."
 description: "Fully local PDF RAG pipeline (PyMuPDF, SentenceTransformers, FAISS, Ollama) with a 68-question retrieval evaluation."
@@ -31,6 +31,11 @@ flowchart TB
     E --> G[Top-k chunks]
     G --> H[Ollama phi4-mini]
     H --> I[Answer with cited sources]
+    classDef io fill:#2F3E56,stroke:#2F3E56,color:#F8FAFB
+    classDef store fill:#EAF3F2,stroke:#587880,color:#1F2D40
+    classDef tool fill:#F8FAFB,stroke:#44688F,color:#1F2D40
+    class A,Q,I io
+    class E store
 ```
 
 ## Design

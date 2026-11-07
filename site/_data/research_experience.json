@@ -1,0 +1,8 @@
+[
+  {
+    "years": "2018 — 2022",
+    "role": "Research Assistant",
+    "org": "Intelligent Systems Group, IASBS, Zanjan",
+    "description": "Researched NLP with a focus on Transformers and autoencoder models; designed Siamese BERT architectures for semantic scoring of augmented sentences, benchmarked against SBERT and Augmented SBERT baselines; built LSTM/XGBoost-based predictive models for traffic flow."
+  }
+]

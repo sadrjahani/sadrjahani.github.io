@@ -1,0 +1,32 @@
+<section class="hero">
+  <div class="hero-photo has-photo"><img src="{{ site.avatar | relative_url }}" alt="{{ site.author }}"></div>
+  <div class="hero-text">
+    <h1>{{ site.author }}</h1>
+    <div class="hero-alias">({{ site.alias }})</div>
+    <div class="hero-role">{{ site.role_line }}</div>
+    <p class="hero-bio">{{ site.hero_bio }}</p>
+    <div class="tags">
+      {% for tag in site.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    <div class="hero-ctas">
+      <a href="{{ '/projects/' | relative_url }}" class="cta">View projects</a>
+      <a href="{{ '/cv/' | relative_url }}" class="cta secondary">View CV</a>
+    </div>
+  </div>
+</section>
+
+<section class="bordered">
+  <div class="section-head reveal">
+    <h2>What I work on</h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="focus-grid-3">
+      {% for item in site.data.home_focus %}
+      <div class="focus-item">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

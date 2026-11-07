@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h1>Selected work</h1>
+  <p class="lede">Applied work spanning RAG, LLM agents, graph retrieval, forecasting, and NLP — drawn from research, industry roles and public projects. Currently building in public: a ReAct agent from scratch, a LangChain rebuild and a GraphRAG project (<a href="https://github.com/sadrjahani">github.com/sadrjahani</a>).</p>
+</div>
+
+  <section>
+    <div class="proj-grid reveal">
+      {% for proj in site.data.projects %}
+      <div class="proj-card">
+        <h3>{{ proj.title }}</h3>
+        <p>{{ proj.description }}</p>
+        <div class="proj-tags">{% for tag in proj.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+        <a href="{{ proj.link | default: '#' }}" class="proj-link">View project</a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>

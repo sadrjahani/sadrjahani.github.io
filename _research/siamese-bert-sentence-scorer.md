@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 4
+order: 5
 title: "Siamese BERT Sentence Scorer"
 subtitle: "An autoencoder and Siamese BERT model scoring semantic textual similarity between augmented sentence pairs."
 description: "Autoencoder + Siamese BERT architecture for semantic textual similarity scoring."

@@ -1,0 +1,18 @@
+<!--
+  Reusable timeline block. Call with:
+    include timeline.html rows=<some _data array>
+  Each row needs: years, role, org; optional: description, links (list of {label, url}).
+-->
+<div class="timeline reveal">
+  {% for row in include.rows %}
+  <div class="t-row">
+    <div class="t-year">{{ row.years }}</div>
+    <div>
+      <div class="t-role">{{ row.role }}</div>
+      <div class="t-org">{{ row.org }}</div>
+      {% if row.description and row.description != "" %}<p class="t-desc">{{ row.description }}</p>{% endif %}
+      {% if row.links %}<div class="t-links">{% for l in row.links %}<a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}" target="_blank" rel="noopener">{{ l.label }} ↗</a>{% endfor %}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

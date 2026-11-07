@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 9
+order: 10
 title: "Market Intelligence Web Scraping"
 subtitle: "Automated collection of competitor and market data to feed pricing and demand models."
 description: "Freelance web scraping pipeline for market intelligence, feeding the pricing optimizer."

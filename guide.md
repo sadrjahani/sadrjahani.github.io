@@ -167,6 +167,21 @@ rendered, so referee contact details aren't published on the live site. If you'd
 string `""` if that project doesn't have a full write-up yet.
 
 
+```json
+{
+  "id": "1",
+  "title": "Autoencoder for Scoring Augmented Pair Sentences",
+  "venue": "Intelligent Systems Group, IASBS",
+  "year": "In Prep",
+  "abstract": "Proposes an autoencoder-based approach to scoring semantic textual similarity between augmented sentence pairs...",
+  "bibtex": "@unpublished{sadrjahani2026autoencoder,\n  title = {...},\n  ...\n}",
+  "links": { "pdf": "https://...", "doi": "https://...", "code": "https://..." }
+}
+```
+`abstract` and `bibtex` are both optional — the "Abstract" and "Cite" buttons only appear on
+a publication if the matching field is present. `bibtex` renders in a themed code block with
+a one-click copy button. `links` accepts any combination of `pdf`, `doi`, and `code` — leave
+any out and that button just doesn't show, same pattern as `links` on a project write-up.
 
 ### `news.json` — News list
 
@@ -219,7 +234,7 @@ unlike `_data/*.json`, which live-reloads.
 The entire palette is CSS custom properties at the top of `assets/css/portfolio.css`:
 
 ```css
-
+--bg: #FAF8F3;           /* page background */
 --paper: #F3F0E8;        /* card / code-block background */
 --ink: #1B1A17;           /* primary text */
 --ink-soft: #5B584E;      /* body copy */

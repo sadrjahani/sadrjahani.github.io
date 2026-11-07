@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 7
+order: 8
 title: "Fraud & Sentiment Detection"
 subtitle: "NLP-driven fraud detection and sentiment analysis models delivered in both English and Persian."
 description: "Bilingual NLP models for fraud detection and sentiment analysis, delivered freelance."

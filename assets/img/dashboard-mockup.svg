@@ -6,7 +6,6 @@
   <text x="330" y="36" fill="#A9C7EE" font-size="14">Overview · Servers · Network · Printers · Capacity</text>
   <rect x="930" y="14" width="120" height="28" rx="14" fill="#44688F"/><text x="990" y="33" fill="#fff" font-size="13" text-anchor="middle">Last 30 days</text>
   <circle cx="1090" cy="28" r="13" fill="#A8CAC8"/><text x="1090" y="33" fill="#2F3E56" font-size="12" font-weight="700" text-anchor="middle">IT</text>
-  <!-- KPI cards -->
   <g font-size="13" fill="#66788A">
     <rect x="28" y="80" width="272" height="110" rx="10" fill="#fff" stroke="#DCE5EB"/>
     <text x="48" y="108">Server uptime</text><text x="48" y="154" font-size="36" font-weight="700" fill="#1F2D40">99.9%</text><text x="48" y="176" fill="#3A7D7A">▲ stable vs. last month</text>
@@ -17,7 +16,6 @@
     <rect x="892" y="80" width="280" height="110" rx="10" fill="#fff" stroke="#DCE5EB"/>
     <text x="912" y="108">Capacity headroom</text><text x="912" y="154" font-size="36" font-weight="700" fill="#1F2D40">38%</text><text x="912" y="176" fill="#587880">Review next quarter</text>
   </g>
-  <!-- Uptime trend -->
   <rect x="28" y="210" width="560" height="270" rx="10" fill="#fff" stroke="#DCE5EB"/>
   <text x="48" y="240" font-size="15" font-weight="700" fill="#1F2D40">Server &amp; virtualization uptime</text>
   <text x="48" y="259" font-size="12" fill="#66788A">Hourly checks, rolling 30 days</text>
@@ -25,7 +23,6 @@
   <path d="M48 330 L110 322 L170 338 L230 318 L290 326 L350 312 L410 320 L470 308 L530 314 L568 310 L568 440 L48 440Z" fill="#E1EBF3"/>
   <polyline points="48,330 110,322 170,338 230,318 290,326 350,312 410,320 470,308 530,314 568,310" fill="none" stroke="#44688F" stroke-width="3" stroke-linejoin="round"/>
   <g font-size="11" fill="#66788A"><text x="48" y="460">Week 1</text><text x="205" y="460">Week 2</text><text x="365" y="460">Week 3</text><text x="520" y="460">Week 4</text></g>
-  <!-- Incident bars -->
   <rect x="604" y="210" width="568" height="270" rx="10" fill="#fff" stroke="#DCE5EB"/>
   <text x="624" y="240" font-size="15" font-weight="700" fill="#1F2D40">Network incidents per week</text>
   <text x="624" y="259" font-size="12" fill="#66788A">By severity</text>
@@ -37,7 +34,6 @@
   </g>
   <g font-size="11" fill="#66788A" text-anchor="middle"><text x="673" y="460">W1</text><text x="773" y="460">W2</text><text x="873" y="460">W3</text><text x="973" y="460">W4</text></g>
   <g font-size="12" fill="#4A5B6D"><rect x="1040" y="300" width="12" height="12" fill="#7AA2C4"/><text x="1060" y="311">Low</text><rect x="1040" y="326" width="12" height="12" fill="#44688F"/><text x="1060" y="337">Medium</text><rect x="1040" y="352" width="12" height="12" fill="#9A5560"/><text x="1060" y="363">High</text></g>
-  <!-- Site status table -->
   <rect x="28" y="500" width="760" height="216" rx="10" fill="#fff" stroke="#DCE5EB"/>
   <text x="48" y="530" font-size="15" font-weight="700" fill="#1F2D40">Site &amp; service status</text>
   <g font-size="12" fill="#66788A"><text x="48" y="556">SERVICE</text><text x="300" y="556">STATUS</text><text x="440" y="556">LAST CHECK</text><text x="600" y="556">OWNER</text></g>
@@ -48,7 +44,6 @@
     <text x="48" y="652">Branch office link</text><circle cx="306" cy="647" r="6" fill="#C9A24B"/><text x="320" y="652">Degraded</text><text x="440" y="652">12 min ago</text><text x="600" y="652">IT team</text>
     <text x="48" y="682">Printer fleet</text><circle cx="306" cy="677" r="6" fill="#3A7D7A"/><text x="320" y="682">Operational</text><text x="440" y="682">Today</text><text x="600" y="682">Office admin</text>
   </g>
-  <!-- Capacity donut -->
   <rect x="804" y="500" width="368" height="216" rx="10" fill="#fff" stroke="#DCE5EB"/>
   <text x="824" y="530" font-size="15" font-weight="700" fill="#1F2D40">Capacity</text>
   <circle cx="914" cy="624" r="52" fill="none" stroke="#E1EBF3" stroke-width="20"/>

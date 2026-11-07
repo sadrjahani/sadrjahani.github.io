@@ -1,7 +1,7 @@
 [
   {
-    "date": "Oct 2026",
-    "html": "Started <a href=\"https://github.com/sadrjahani/react-agent-from-scratch\">react-agent-from-scratch</a>: a ReAct agent in plain Python with a provider-agnostic LLM wrapper (work in progress)."
+    "date": "Nov 2026",
+    "html": "Completed <a href=\"https://github.com/sadrjahani/react-agent-from-scratch\">ReAct Agent From Scratch</a> and started <a href=\"https://github.com/sadrjahani/langchain-agent-rebuild\">LangChain Agent Rebuild</a> to compare framework-based and framework-free agents."
   },
   {
     "date": "Oct 2026",

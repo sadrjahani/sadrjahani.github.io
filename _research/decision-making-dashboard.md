@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 10
+order: 11
 title: "Decision-Making Dashboard"
 subtitle: "A management dashboard consolidating network and infrastructure health for faster operational decisions."
 description: "Management dashboard built as an IT Expert at Arian Saeed Industrial Groups (ASIGI)."

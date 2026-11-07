@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 8
+order: 9
 title: "E-Commerce Pipeline Automation"
 subtitle: "Automated data pipelines and marketing-data optimization for an e-commerce platform's decision-making."
 description: "Automated SQL/Python data pipeline built at Sabke Zandegi Khallagh (Mihan GP)."

@@ -53,6 +53,8 @@ permalink: pretty
 # /projects/my-project/. Project cards on the Projects page
 # link here for the full write-up (math, images, code, pseudocode, etc.
 # — see /projects/style-guide/ for every available formatting option).
+future: true
+
 collections:
   research:
     output: true

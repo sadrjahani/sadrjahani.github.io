@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 5
+order: 6
 title: "Dynamic Pricing Optimizer"
 subtitle: "A pricing system overhaul that improved efficiency by 30% while cutting execution time, built freelance."
 description: "Freelance pricing optimization system with a beam-search-style candidate ranking approach."

@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 3
+order: 4
 title: "Neo4j Semantic Search for LLM Applications"
 subtitle: "Consent-based data collection on GCP feeding a Neo4j graph that powers semantic search for LLM applications — built at Goodfolio."
 description: "Consent-based data pipelines on Google Cloud and Neo4j-backed semantic search for LLM applications, built at Goodfolio."
@@ -30,6 +30,11 @@ flowchart TB
     B --> C[GCP pipeline]
     C --> D[(Neo4j graph)]
     D --> E[LLM application: semantic search]
+    classDef io fill:#2F3E56,stroke:#2F3E56,color:#F8FAFB
+    classDef store fill:#EAF3F2,stroke:#587880,color:#1F2D40
+    classDef tool fill:#F8FAFB,stroke:#44688F,color:#1F2D40
+    class A,E io
+    class D store
 ```
 
 ## Graph-backed semantic search

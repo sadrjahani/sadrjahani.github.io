@@ -1,0 +1,160 @@
+[
+  {
+    "type": "certification",
+    "years": "Jul 2025",
+    "role": "Hugging Face Agents Course — Unit 1: Foundations of Agents",
+    "org": "Hugging Face",
+    "description": "Certificate of Achievement.",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/hugging-face-agents-unit1-2025.jpg"
+      }
+    ]
+  },
+  {
+    "type": "certification",
+    "years": "Aug 2024",
+    "role": "Python & SQL Track (5 courses)",
+    "org": "DataCamp",
+    "description": "Introduction to Python, Intermediate Python, Intermediate Importing Data in Python, Introduction to SQL, Intermediate SQL.",
+    "links": [
+      {
+        "label": "Intro Python",
+        "url": "/assets/certificates/datacamp-introduction-to-python.pdf"
+      },
+      {
+        "label": "Intermediate Python",
+        "url": "/assets/certificates/datacamp-intermediate-python.pdf"
+      },
+      {
+        "label": "Importing Data",
+        "url": "/assets/certificates/datacamp-intermediate-importing-data-python.pdf"
+      },
+      {
+        "label": "Intro SQL",
+        "url": "/assets/certificates/datacamp-introduction-to-sql.pdf"
+      },
+      {
+        "label": "Intermediate SQL",
+        "url": "/assets/certificates/datacamp-intermediate-sql.pdf"
+      }
+    ]
+  },
+  {
+    "type": "certification",
+    "years": "Apr 2022",
+    "role": "Neural Networks and Deep Learning",
+    "org": "DeepLearning.AI (via Coursera)",
+    "description": "Course certificate, verifiable online.",
+    "links": [
+      {
+        "label": "Verify on Coursera",
+        "url": "https://coursera.org/verify/ZYTZKTZE88VT"
+      },
+      {
+        "label": "PDF",
+        "url": "/assets/certificates/coursera-neural-networks-deep-learning-2022.pdf"
+      }
+    ]
+  },
+  {
+    "type": "certification",
+    "years": "Sep 2014",
+    "role": "Network+ (course completion)",
+    "org": "OFSHID Training Center, Tehran",
+    "description": "Networking fundamentals, from my early IT and network administration years.",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/network-plus-ofshid-2014.pdf"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Online",
+    "role": "Neo4j GraphAcademy — Neo4j Fundamentals, Cypher Fundamentals, Graph Data Modeling Fundamentals, and other short courses",
+    "org": "Neo4j GraphAcademy",
+    "description": "Self-paced courses supporting my graph-retrieval work.",
+    "links": [
+      {
+        "label": "Neo4j Fundamentals",
+        "url": "https://graphacademy.neo4j.com/courses/neo4j-fundamentals"
+      },
+      {
+        "label": "Cypher Fundamentals",
+        "url": "https://graphacademy.neo4j.com/courses/cypher-fundamentals"
+      },
+      {
+        "label": "Graph Data Modeling",
+        "url": "https://graphacademy.neo4j.com/courses/modeling-fundamentals"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Sep 2021",
+    "role": "Deep Learning with PyTorch (10-hour workshop)",
+    "org": "IASBS, Zanjan",
+    "description": "",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/pytorch-workshop-iasbs-2021.jpg"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Sep 2020",
+    "role": "First Summer School: AI and Emerging Technologies",
+    "org": "ComInSys, University of Tabriz",
+    "description": "10–20 September 2020.",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/ai-summer-school-cominsys-2020.jpg"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Mar 2019",
+    "role": "Introduction to Data Science in R",
+    "org": "IASBS Science and Technology Park, Zanjan",
+    "description": "",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/intro-data-science-r-iasbs-2019.jpg"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Mar 2019",
+    "role": "Deep Learning tutorial, CiDaS 2019",
+    "org": "International Conference on Contemporary Issues in Data Science, IASBS",
+    "description": "",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/cidas-2019-deep-learning-tutorial.pdf"
+      }
+    ]
+  },
+  {
+    "type": "training",
+    "years": "Feb 2016",
+    "role": "8th Winter School on Computational Geometry",
+    "org": "WSCG 2016",
+    "description": "24–29 February 2016.",
+    "links": [
+      {
+        "label": "Certificate",
+        "url": "/assets/certificates/wscg-2016-attendance.jpg"
+      }
+    ]
+  }
+]

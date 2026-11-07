@@ -1,6 +1,29 @@
 [
   {
-    "num": "01",
+    "title": "LangChain Agent Rebuild",
+    "description": "Rebuilding the from-scratch ReAct agent with LangChain (LCEL, structured tools, tool calling, conversation memory) to compare framework-based and framework-free architectures. In progress.",
+    "tags": [
+      "LangChain",
+      "AI Agents",
+      "LCEL"
+    ],
+    "link": "/projects/langchain-agent-rebuild/",
+    "num": "01"
+  },
+  {
+    "title": "ReAct Agent From Scratch",
+    "description": "Lightweight ReAct agent in plain Python with a unified Ollama/OpenAI interface, explicit Thought → Action → Observation orchestration, bounded tools, error handling and automated tests.",
+    "tags": [
+      "AI Agents",
+      "Python",
+      "Ollama",
+      "OpenAI"
+    ],
+    "link": "/projects/react-agent-from-scratch/",
+    "num": "02"
+  },
+  {
+    "num": "03",
     "title": "Local PDF RAG System",
     "description": "A fully local question-answering pipeline over PDF books — PyMuPDF, FAISS and an Ollama model — with source citations and a 68-question retrieval evaluation.",
     "tags": [
@@ -11,19 +34,7 @@
     "link": "/projects/local-pdf-rag-system/"
   },
   {
-    "title": "ReAct Agent From Scratch",
-    "description": "A ReAct agent in plain Python, without agent frameworks. Switches between Anthropic, OpenAI and local Ollama models, runs a Thought → Action → Observation loop and handles malformed output and tool errors. In progress.",
-    "tags": [
-      "AI Agents",
-      "Python",
-      "Ollama",
-      "pytest"
-    ],
-    "link": "/projects/react-agent-from-scratch/",
-    "num": "02"
-  },
-  {
-    "num": "03",
+    "num": "04",
     "title": "Neo4j Semantic Search for LLM Apps",
     "description": "Consent-based data collection on GCP feeding a Neo4j graph that powers semantic search for LLM applications, built at Goodfolio.",
     "tags": [
@@ -34,7 +45,7 @@
     "link": "/projects/neo4j-semantic-search/"
   },
   {
-    "num": "04",
+    "num": "05",
     "title": "Siamese BERT Sentence Scorer",
     "description": "An autoencoder and Siamese BERT model scoring semantic textual similarity between augmented sentence pairs, benchmarked against SBERT and Augmented SBERT.",
     "tags": [
@@ -45,7 +56,7 @@
     "link": "/projects/siamese-bert-sentence-scorer/"
   },
   {
-    "num": "05",
+    "num": "06",
     "title": "Dynamic Pricing Optimizer",
     "description": "A pricing system overhaul that improved efficiency by 30% while cutting execution time, built freelance.",
     "tags": [
@@ -56,7 +67,7 @@
     "link": "/projects/dynamic-pricing-optimizer/"
   },
   {
-    "num": "06",
+    "num": "07",
     "title": "Traffic Flow Forecasting",
     "description": "Predictive models comparing LSTM, XGBoost, ARIMA, and Prophet for vehicular traffic-flow prediction.",
     "tags": [
@@ -67,7 +78,7 @@
     "link": "/projects/traffic-flow-forecasting/"
   },
   {
-    "num": "07",
+    "num": "08",
     "title": "Fraud & Sentiment Detection",
     "description": "NLP-driven fraud detection and sentiment analysis models delivered in both English and Persian.",
     "tags": [
@@ -78,7 +89,7 @@
     "link": "/projects/fraud-sentiment-detection/"
   },
   {
-    "num": "08",
+    "num": "09",
     "title": "E-Commerce Pipeline Automation",
     "description": "Automated data pipelines and marketing-data optimization for an e-commerce platform's decision-making.",
     "tags": [
@@ -89,7 +100,7 @@
     "link": "/projects/ecommerce-pipeline-automation/"
   },
   {
-    "num": "09",
+    "num": "10",
     "title": "Market Intelligence Web Scraping",
     "description": "Automated collection of competitor and market data to feed pricing and demand models, built freelance.",
     "tags": [
@@ -100,7 +111,7 @@
     "link": "/projects/market-intelligence-web-scraping/"
   },
   {
-    "num": "10",
+    "num": "11",
     "title": "Decision-Making Dashboard",
     "description": "A management dashboard consolidating network and infrastructure health for faster operational decisions, built at ASIGI.",
     "tags": [

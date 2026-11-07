@@ -1,6 +1,6 @@
 ---
 layout: research-project
-order: 6
+order: 7
 title: "Traffic Flow Forecasting"
 subtitle: "Predictive models comparing LSTM, XGBoost, ARIMA, and Prophet for vehicular traffic-flow prediction."
 description: "Time-series forecasting comparison for vehicular traffic flow at IASBS."
